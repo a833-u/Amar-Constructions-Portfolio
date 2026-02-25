@@ -1,10 +1,10 @@
-import type {
-  ComponentPropsWithoutRef,
+import {
   useCallback,
   useEffect,
   useId,
   useRef,
   useState,
+  type ComponentPropsWithoutRef,
 } from "react"
 import { motion } from "motion/react"
 
