@@ -10,6 +10,7 @@ import CurvedLoop from "../components/CurvedLoop";
 import CountUp from "../components/CountUp";
 import AvailabilityBadge from "@/components/AvailabilityBadge";
 import ServicesSection from "@/Sections/ServicesSection";
+import CircularGallery from "@/components/CircularGallery";
 
 const Home = () => {
   return (
@@ -200,6 +201,23 @@ const Home = () => {
       {/* ================================= */}
 
       <ServicesSection />
+
+      {/* ================================= */}
+      {/* IMAGE SLIDER */}
+      {/* ================================= */}
+
+      <div style={{ height: "600px", position: "relative" }}>
+        <CircularGallery
+          bend={3}
+          textColor="#ffffff"
+          borderRadius={0.05}
+          scrollEase={0.02}
+          bend={0}
+          borderRadius={0.07}
+          scrollSpeed={1.5}
+          scrollEase={0.1}
+        />
+      </div>
     </div>
   );
 };
