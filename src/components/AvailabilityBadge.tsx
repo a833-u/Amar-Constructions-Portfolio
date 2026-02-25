@@ -1,4 +1,3 @@
-import React from "react";
 import ShinyText from "./ShinyText";
 import { cn } from "@/lib/utils";
 
