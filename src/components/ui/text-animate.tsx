@@ -1,6 +1,6 @@
-import { ElementType, memo } from "react"
+import type { ElementType, memo } from "react"
 import { AnimatePresence, motion } from "motion/react"
-import type { MotionProps, Variants } from "motion"
+import type { MotionProps, Variants } from "framer-motion"
 
 import { cn } from "@/lib/utils"
 
