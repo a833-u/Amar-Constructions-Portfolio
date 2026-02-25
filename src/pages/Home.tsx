@@ -26,8 +26,8 @@ const Home = () => {
         <div className="absolute inset-0 bg-black/50 z-[1]" />
 
         {/* Hero Content */}
-        <div className="relative z-[2] w-full sm:w-3/4 md:w-2/3 lg:w-1/2 flex flex-col items-center justify-center gap-6 text-center px-4">
-          <AvailabilityBadge    text="Crafting Foundations for the Future" />
+        <div className="relative z-[2] w-full sm:w-3/4 md:w-auto lg:w-auto flex flex-col items-center justify-center gap-6 text-center px-4">
+          <AvailabilityBadge text="Crafting Foundations for the Future" />
 
           <h1 className="figtree-regular text-white uppercase text-[9vw] sm:text-4xl md:text-5xl lg:text-[vw] leading-tight flex flex-col md:flex-row items-center gap-[1.5vw]">
             We Belive in{" "}
@@ -61,7 +61,9 @@ const Home = () => {
           </div>
 
           <div className="flex flex-col items-center md:items-start gap-[5vw] md:gap-[1.5vw]">
-            <SectionHeading className="font-author-bold text-4xl md:text-3xl">About Us</SectionHeading>
+            <SectionHeading className="font-author-bold text-4xl md:text-3xl">
+              About Us
+            </SectionHeading>
 
             <TextAnimate
               animation="blurIn"
@@ -198,7 +200,6 @@ const Home = () => {
       {/* ================================= */}
 
       <ServicesSection />
-
     </div>
   );
 };
