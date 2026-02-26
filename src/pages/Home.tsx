@@ -11,6 +11,7 @@ import CountUp from "../components/CountUp";
 import AvailabilityBadge from "@/components/AvailabilityBadge";
 import ServicesSection from "@/Sections/ServicesSection";
 import CircularGallery from "@/components/CircularGallery";
+import ContactForm from "@/components/ContactForm";
 
 const Home = () => {
   return (
@@ -218,6 +219,8 @@ const Home = () => {
           scrollEase={0.1}
         />
       </div>
+
+      <ContactForm />
     </div>
   );
 };

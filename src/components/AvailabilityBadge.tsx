@@ -10,8 +10,8 @@ const AvailabilityBadge = ({ text, className }: AvailabilityBadgeProps) => {
   return (
     <span
       className={cn(
-        "py-3 px-6 rounded-full bg-[#28282c] border border-[#222222] flex items-center gap-4",
-        className
+        "w-fit py-3 px-6 rounded-full bg-[#28282c] border border-[#222222] flex items-center gap-4",
+        className,
       )}
     >
       {/* Ping Dot */}
