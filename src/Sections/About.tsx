@@ -5,7 +5,7 @@ import { PixelImage } from "@/components/ui/pixel-image";
 
 const About = () => {
   return (
-    <section className="bg-black min-h-[100svh] flex items-center px-5 py-20">
+    <section id="about" className="bg-black min-h-[100svh] flex items-center px-5 py-20">
 
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 md:gap-16 items-center w-full">
 

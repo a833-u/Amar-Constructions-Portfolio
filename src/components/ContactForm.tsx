@@ -42,7 +42,7 @@ Message: ${form.message}
   };
 
   return (
-    <section className="bg-black min-h-[100svh] flex items-center justify-center px-6 py-24">
+    <section id="contact" className="bg-black min-h-[100svh] flex items-center justify-center px-6 py-24">
       <div className="w-full max-w-3xl">
         {/* Heading */}
         <div className="text-center mb-16 flex flex-col items-center">
@@ -58,7 +58,7 @@ Message: ${form.message}
         {/* Form Card */}
         <form
           onSubmit={handleSubmit}
-          className="bg-[#111111] border border-[#222222] rounded-3xl p-10 space-y-8 shadow-xl"
+          className="bg-[#111111] border border-[#222222] rounded-3xl p-5 sm:p-8 space-y-8 shadow-xl"
         >
           {/* Name + Email Row */}
           <div className="grid md:grid-cols-2 gap-6">

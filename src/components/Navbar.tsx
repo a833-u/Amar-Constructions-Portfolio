@@ -25,6 +25,14 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [lastScrollY]);
 
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+      setMobileOpen(false); // close mobile menu
+    }
+  };
+
   return (
     <header
       className={`fixed left-1/2 -translate-x-1/2 top-[2%] w-[90%] md:w-[60%] z-50 transition-all duration-300 ${
@@ -47,19 +55,42 @@ const Navbar = () => {
 
         <ul className="flex items-center gap-[2vw]">
           <li>
-            <Link to="/about" className="text-white font-satoshi-regular">
+            <button
+              onClick={() =>
+                document.getElementById("about")?.scrollIntoView({
+                  behavior: "smooth",
+                })
+              }
+              className="text-white font-satoshi-regular cursor-pointer"
+            >
               About
-            </Link>
+            </button>
           </li>
+
           <li>
-            <Link to="/projects" className="text-white font-satoshi-regular">
-              Projects
-            </Link>
+            <button
+              onClick={() =>
+                document.getElementById("services")?.scrollIntoView({
+                  behavior: "smooth",
+                })
+              }
+              className="text-white font-satoshi-regular cursor-pointer"
+            >
+              Services
+            </button>
           </li>
+
           <li>
-            <Link to="/contact" className="text-white font-satoshi-regular">
+            <button
+              onClick={() =>
+                document.getElementById("contact")?.scrollIntoView({
+                  behavior: "smooth",
+                })
+              }
+              className="text-white font-satoshi-regular cursor-pointer"
+            >
               Contact
-            </Link>
+            </button>
           </li>
         </ul>
       </div>
@@ -105,19 +136,30 @@ const Navbar = () => {
       >
         <ul className="flex flex-col items-center gap-4 text-white">
           <li>
-            <Link to="/about" onClick={() => setMobileOpen(false)}>
+            <button
+              onClick={() => scrollToSection("about")}
+              className="font-satoshi-regular"
+            >
               About
-            </Link>
+            </button>
           </li>
+
           <li>
-            <Link to="/projects" onClick={() => setMobileOpen(false)}>
-              Projects
-            </Link>
+            <button
+              onClick={() => scrollToSection("services")}
+              className="font-satoshi-regular"
+            >
+              Services
+            </button>
           </li>
+
           <li>
-            <Link to="/contact" onClick={() => setMobileOpen(false)}>
+            <button
+              onClick={() => scrollToSection("contact")}
+              className="font-satoshi-regular"
+            >
               Contact
-            </Link>
+            </button>
           </li>
         </ul>
       </div>

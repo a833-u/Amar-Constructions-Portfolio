@@ -57,7 +57,7 @@ export default function ServicesSection() {
   };
 
   return (
-    <section className="bg-black min-h-[100svh] py-24 px-6 flex flex-col items-center">
+    <section id="services" className="bg-black min-h-[100svh] py-24 px-6 flex flex-col items-center">
       <div className="text-center mb-20 flex flex-col items-center">
         {/* Small Badge */}
         <AvailabilityBadge text="Services" />
