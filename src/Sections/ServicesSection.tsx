@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { PixelImage } from "@/components/ui/pixel-image";
 
-import kitchenImg from "@/assets/Images/kitchen.png";
-import loftImg from "@/assets/Images/loft.jpg";
-import bathImg from "@/assets/Images/bathroom.png";
+// import kitchenImg from "@/assets/Images/kitchen.png";
+// import loftImg from "@/assets/Images/loft.jpg";
+// import bathImg from "@/assets/Images/bathroom.png";
 import extensionImg from "@/assets/Images/extension.jpg";
 import industrialImg from "@/assets/Images/industrial.jpg";
 import AvailabilityBadge from "@/components/AvailabilityBadge";
@@ -11,35 +11,35 @@ import SectionHeading from "@/components/SectionHeading";
 
 const services = [
   {
-    title: "Kitchens",
-    description:
-      "We design and build stunning kitchens tailored to your style and needs. From modern spaces to timeless classics, we deliver quality craftsmanship.",
-    image: kitchenImg,
-  },
-  {
-    title: "Loft Conversions",
-    description:
-      "Transform unused lofts into beautiful living spaces with expert structural precision and finishing.",
-    image: loftImg,
-  },
-  {
-    title: "Bathrooms",
-    description:
-      "Elegant and functional bathroom renovations designed with comfort and durability in mind.",
-    image: bathImg,
-  },
-  {
-    title: "Extensions",
-    description:
-      "Expand your home seamlessly with high-quality structural extensions built to last.",
-    image: extensionImg,
-  },
-  {
     title: "Industrial",
     description:
       "Specialized industrial construction and renovation services for commercial and industrial properties.",
     image: industrialImg,
   },
+  {
+    title: "Residential",
+    description:
+      "We design and build stunning kitchens tailored to your style and needs. From modern spaces to timeless classics, we deliver quality craftsmanship.",
+    image: extensionImg,
+  },
+  // {
+  //   title: "Loft Conversions",
+  //   description:
+  //     "Transform unused lofts into beautiful living spaces with expert structural precision and finishing.",
+  //   image: loftImg,
+  // },
+  // {
+  //   title: "Bathrooms",
+  //   description:
+  //     "Elegant and functional bathroom renovations designed with comfort and durability in mind.",
+  //   image: bathImg,
+  // },
+  // {
+  //   title: "Extensions",
+  //   description:
+  //     "Expand your home seamlessly with high-quality structural extensions built to last.",
+  //   image: extensionImg,
+  // },
 ];
 
 export default function ServicesSection() {
