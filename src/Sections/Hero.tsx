@@ -4,6 +4,13 @@ import { ShimmerButton } from "@/components/ui/shimmer-button";
 import { WordRotate } from "@/components/ui/word-rotate";
 
 const Hero = () => {
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <section className="relative flex items-center justify-center min-h-[100svh] bg-black overflow-hidden">
       {/* GRID (z-0) */}
@@ -31,8 +38,13 @@ const Hero = () => {
         </p>
 
         <div className="flex flex-wrap justify-center gap-4 pt-4">
-          <ShimmerButton>Contact us</ShimmerButton>
-          <ShimmerButton>See Projects</ShimmerButton>
+          <ShimmerButton onClick={() => scrollToSection("contact")}>
+            Contact us
+          </ShimmerButton>
+
+          <ShimmerButton onClick={() => scrollToSection("projects")}>
+            See Projects
+          </ShimmerButton>
         </div>
       </div>
     </section>

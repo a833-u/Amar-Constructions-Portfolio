@@ -9,22 +9,13 @@ import CompanyPerformance from "@/Sections/CompanyPerformance";
 const Home = () => {
   return (
     <div className="w-full bg-black overflow-x-hidden">
-      {/* ================================= */}
-      {/* HERO SECTION */}
-      {/* ================================= */}
-
+      {/* ================ HERO SECTION =================*/}
       <Hero />
 
-      {/* ================================= */}
-      {/* ABOUT SECTION */}
-      {/* ================================= */}
-
+      {/* ================ ABOUT SECTION =================*/}
       <About />
 
-      {/* ================================= */}
-      {/* MARQUEE */}
-      {/* ================================= */}
-
+      {/* ================ MARQUEE =================*/}
       <CurvedLoop
         marqueeText=" Design  ✦  Build  ✦  Deliver  ✦  Excellence  ✦"
         speed={2}
@@ -34,41 +25,31 @@ const Home = () => {
         className="custom-text-style"
       />
 
-      {/* ================================= */}
-      {/* COMPANY PERFORMANCE */}
-      {/* ================================= */}
-
+      {/* ================ COMPANY PERFORMANCE =================*/}
       <CompanyPerformance />
 
-      {/* ================================= */}
-      {/* SERVICE */}
-      {/* ================================= */}
-
+      {/* ================ SERVICE =================*/}
       <ServicesSection />
 
-      {/* ================================= */}
-      {/* IMAGE SLIDER */}
-      {/* ================================= */}
+      {/* ================ IMAGE SLIDER =================*/}
+      <section id="projects" className="scroll-mt-32">
+        <div style={{ height: "600px", position: "relative" }}>
+          <CircularGallery
+            bend={3}
+            textColor="#e2ca76"
+            font="bold 40px Figtree"
+            borderRadius={0.05}
+            scrollEase={0.02}
+            bend={0}
+            borderRadius={0.07}
+            scrollSpeed={1.5}
+            scrollEase={0.1}
+          />
+        </div>
+      </section>
 
-      <div style={{ height: "600px", position: "relative" }}>
-        <CircularGallery
-          bend={3}
-          textColor="#ffffff"
-          borderRadius={0.05}
-          scrollEase={0.02}
-          bend={0}
-          borderRadius={0.07}
-          scrollSpeed={1.5}
-          scrollEase={0.1}
-        />
-      </div>
-
-      {/* ================================= */}
-      {/* CONTACT FORM */}
-      {/* ================================= */}
-
+      {/* ================ CONTACT FORM =================*/}
       <ContactForm />
-
     </div>
   );
 };
