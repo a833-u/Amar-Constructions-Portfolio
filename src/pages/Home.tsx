@@ -1,10 +1,10 @@
-import CurvedLoop from "../components/CurvedLoop";
 import ServicesSection from "@/Sections/ServicesSection";
 import CircularGallery from "@/components/CircularGallery";
 import ContactForm from "@/components/ContactForm";
 import Hero from "@/Sections/Hero";
 import About from "../Sections/About";
 import CompanyPerformance from "@/Sections/CompanyPerformance";
+import SmoothMarquee from "@/components/SmoothMarquee";
 
 const Home = () => {
   return (
@@ -16,14 +16,7 @@ const Home = () => {
       <About />
 
       {/* ================ MARQUEE =================*/}
-      <CurvedLoop
-        marqueeText=" Design  ✦  Build  ✦  Deliver  ✦  Excellence  ✦"
-        speed={2}
-        curveAmount={0}
-        direction="left"
-        interactive={false}
-        className="custom-text-style"
-      />
+      <SmoothMarquee />
 
       {/* ================ COMPANY PERFORMANCE =================*/}
       <CompanyPerformance />
