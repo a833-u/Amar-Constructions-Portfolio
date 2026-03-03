@@ -572,7 +572,7 @@ const ProfileCardComponent: React.FC<ProfileCardProps> = ({
                     </div>
                   </div>
                   <button
-                    className="border border-white/10 rounded-lg px-4 py-3 text-xs font-semibold text-white/90 cursor-pointer backdrop-blur-[10px] transition-all duration-200 ease-out hover:border-white/40 hover:-translate-y-px"
+                    className="font-satoshi-bold border border-white/10 rounded-lg px-4 py-3 text-xs font-semibold text-white/90 cursor-pointer backdrop-blur-[10px] transition-all duration-200 ease-out hover:border-white/40 hover:-translate-y-px"
                     onClick={handleContactClick}
                     style={{ pointerEvents: 'auto', display: 'block', gridArea: 'auto', borderRadius: '8px' }}
                     type="button"
@@ -598,7 +598,7 @@ const ProfileCardComponent: React.FC<ProfileCardProps> = ({
             >
               <div className="w-full absolute flex flex-col" style={{ top: '3em', display: 'flex', gridArea: 'auto' }}>
                 <h3
-                  className="font-semibold m-0"
+                  className="font-semibold m-0 font-author-bold"
                   style={{
                     fontSize: 'min(5svh, 3em)',
                     backgroundImage: 'linear-gradient(to bottom, #fff, #6f6fbe)',
@@ -615,7 +615,7 @@ const ProfileCardComponent: React.FC<ProfileCardProps> = ({
                   {name}
                 </h3>
                 <p
-                  className="font-semibold whitespace-nowrap mx-auto w-min"
+                  className="font-semibold whitespace-nowrap mx-auto w-min font-satoshi-light"
                   style={{
                     position: 'relative',
                     top: '-12px',

@@ -4,8 +4,9 @@ import ContactForm from "@/components/ContactForm";
 import Hero from "@/Sections/Hero";
 import About from "../Sections/About";
 import CompanyPerformance from "@/Sections/CompanyPerformance";
-import SmoothMarquee from "@/components/SmoothMarquee";
 import ProfileCard from "@/components/ProfileCard";
+import SmoothMarquee from "@/components/SmoothMarquee";
+import Mithil from "../assets/Images/Mithil-Kansara.png";
 
 const Home = () => {
   return (
@@ -44,18 +45,17 @@ const Home = () => {
       
       {/* ================ PROFILE CARDS ================== */}
       <ProfileCard
-        name="Javi A. Torres"
-        title="Software Engineer"
-        handle="javicodes"
+        name="Mithil Kansara"
+        title="Civil Engineer"
+        handle="mitilKansara"
         status="Online"
         contactText="Contact Me"
-        avatarUrl="/path/to/avatar.jpg"
+        avatarUrl={Mithil}
         showUserInfo
         enableTilt={true}
         enableMobileTilt
         onContactClick={() => console.log("Contact clicked")}
         behindGlowColor="hsla(345, 100%, 70%, 0.6)"
-        behindGlowEnabled
         innerGradient="linear-gradient(145deg,hsla(345, 40%, 45%, 0.55) 0%,hsla(146, 60%, 70%, 0.27) 100%)"
       />
 
