@@ -1,10 +1,11 @@
-import CurvedLoop from "../components/CurvedLoop";
 import ServicesSection from "@/Sections/ServicesSection";
 import CircularGallery from "@/components/CircularGallery";
 import ContactForm from "@/components/ContactForm";
 import Hero from "@/Sections/Hero";
 import About from "../Sections/About";
 import CompanyPerformance from "@/Sections/CompanyPerformance";
+import SmoothMarquee from "@/components/SmoothMarquee";
+import ProfileCard from "@/components/ProfileCard";
 
 const Home = () => {
   return (
@@ -16,14 +17,7 @@ const Home = () => {
       <About />
 
       {/* ================ MARQUEE =================*/}
-      <CurvedLoop
-        marqueeText=" Design  ✦  Build  ✦  Deliver  ✦  Excellence  ✦"
-        speed={2}
-        curveAmount={0}
-        direction="left"
-        interactive={false}
-        className="custom-text-style"
-      />
+      <SmoothMarquee />
 
       {/* ================ COMPANY PERFORMANCE =================*/}
       <CompanyPerformance />
@@ -47,9 +41,27 @@ const Home = () => {
           />
         </div>
       </section>
+      
+      {/* ================ PROFILE CARDS ================== */}
+      <ProfileCard
+        name="Javi A. Torres"
+        title="Software Engineer"
+        handle="javicodes"
+        status="Online"
+        contactText="Contact Me"
+        avatarUrl="/path/to/avatar.jpg"
+        showUserInfo
+        enableTilt={true}
+        enableMobileTilt
+        onContactClick={() => console.log("Contact clicked")}
+        behindGlowColor="hsla(345, 100%, 70%, 0.6)"
+        behindGlowEnabled
+        innerGradient="linear-gradient(145deg,hsla(345, 40%, 45%, 0.55) 0%,hsla(146, 60%, 70%, 0.27) 100%)"
+      />
 
       {/* ================ CONTACT FORM =================*/}
       <ContactForm />
+
     </div>
   );
 };
