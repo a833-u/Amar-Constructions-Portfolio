@@ -42,13 +42,18 @@ const SmoothMarquee = () => {
           width: fit-content;
         }
 
+        @media (max-width: 640px) {
+          .marquee-content {
+            gap: 24px;
+          }
+        }
+
         .marquee-content:hover {
           animation-play-state: paused;
         }
 
         .logo-item {
           flex-shrink: 0;
-          flex-basis: 160px;
           width: 160px;
           height: 100px;
           display: flex;
@@ -60,6 +65,15 @@ const SmoothMarquee = () => {
           box-shadow: 0 0 20px rgba(226, 202, 118, 0.3);
           border: 1px solid #ffffff50;
           transition: box-shadow 0.3s ease;
+        }
+
+        /* Mobile */
+        @media (max-width: 640px) {
+          .logo-item {
+            width: 110px;
+            height: 70px;
+            padding: 8px;
+          }
         }
 
         .logo-item:hover {
@@ -83,9 +97,8 @@ const SmoothMarquee = () => {
 
         {/* Marquee Container */}
         <div className="relative overflow-hidden bg-black rounded-xl shadow-2xl mt-8">
-          {/* Left Gradient Overlay */}
-          <div className="absolute left-0 top-0 bottom-0 w-40 bg-gradient-to-r from-black to-transparent z-10 pointer-events-none" />
-          <div className="absolute right-0 top-0 bottom-0 w-40 bg-gradient-to-l from-black to-transparent z-10 pointer-events-none" />
+          <div className="absolute left-0 top-0 bottom-0 w-24 md:w-40 bg-gradient-to-r from-black to-transparent z-10 pointer-events-none" />
+          <div className="absolute right-0 top-0 bottom-0 w-24 md:w-40 bg-gradient-to-l from-black to-transparent z-10 pointer-events-none" />
 
           <div className="flex items-center justify-start py-12 px-8 overflow-hidden">
             <div className="marquee-content">
