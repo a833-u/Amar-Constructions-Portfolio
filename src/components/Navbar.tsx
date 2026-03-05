@@ -83,6 +83,19 @@ const Navbar = () => {
           <li>
             <button
               onClick={() =>
+                document.getElementById("projects")?.scrollIntoView({
+                  behavior: "smooth",
+                })
+              }
+              className="text-white font-satoshi-regular cursor-pointer"
+            >
+              Projects
+            </button>
+          </li>
+
+          <li>
+            <button
+              onClick={() =>
                 document.getElementById("contact")?.scrollIntoView({
                   behavior: "smooth",
                 })
@@ -150,6 +163,15 @@ const Navbar = () => {
               className="font-satoshi-regular"
             >
               Services
+            </button>
+          </li>
+
+          <li>
+            <button
+              onClick={() => scrollToSection("projects")}
+              className="font-satoshi-regular"
+            >
+              Projects
             </button>
           </li>
 
