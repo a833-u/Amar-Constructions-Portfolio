@@ -7,6 +7,7 @@ import CompanyPerformance from "@/Sections/CompanyPerformance";
 import ProfileCard from "@/components/ProfileCard";
 import SmoothMarquee from "@/components/SmoothMarquee";
 import Mithil from "../assets/Images/Mithil-Kansara.png";
+import CreatorCardPreview from "@/components/Creatorcardpreview";
 
 const Home = () => {
   return (
@@ -44,20 +45,7 @@ const Home = () => {
       </section>
       
       {/* ================ PROFILE CARDS ================== */}
-      <ProfileCard
-        name="Mithil Kansara"
-        title="Civil Engineer"
-        handle="mitilKansara"
-        status="Online"
-        contactText="Contact Me"
-        avatarUrl={Mithil}
-        showUserInfo
-        enableTilt={true}
-        enableMobileTilt
-        onContactClick={() => console.log("Contact clicked")}
-        behindGlowColor="hsla(345, 100%, 70%, 0.6)"
-        innerGradient="linear-gradient(145deg,hsla(345, 40%, 45%, 0.55) 0%,hsla(146, 60%, 70%, 0.27) 100%)"
-      />
+      <CreatorCardPreview />
 
       {/* ================ CONTACT FORM =================*/}
       <ContactForm />
