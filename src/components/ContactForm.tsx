@@ -27,13 +27,12 @@ export default function ContactForm() {
     e.preventDefault();
 
     const message = `
-New Contact Form Submission:
+      New Contact Form Submission:
 
-Name: ${form.name}
-Email: ${form.email}
-Phone: ${form.phone}
-Message: ${form.message}
-    `;
+      Name: ${form.name}
+      Email: ${form.email}
+      Phone: ${form.phone}
+      Message: ${form.message}`;
 
     const phoneNumber = "919426984852";
     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
