@@ -27,7 +27,7 @@ export default function ContactForm() {
     e.preventDefault();
 
     const message = `
-      New Contact Form Submission:
+      New Client Inquiry:
 
       Name: ${form.name}
       Email: ${form.email}
