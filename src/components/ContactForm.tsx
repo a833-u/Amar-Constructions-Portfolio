@@ -35,7 +35,7 @@ Phone: ${form.phone}
 Message: ${form.message}
     `;
 
-    const phoneNumber = "919999999999"; // Replace
+    const phoneNumber = "919426984852";
     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
     window.open(url, "_blank");
